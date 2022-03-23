@@ -25,6 +25,14 @@ Firstly, install all Python package requirements:
 pip install -r requirements.txt
 ```
 
+**If it gives errors that torch is running without CUDA:
+
+```bash
+pip uninstall torch
+pip cache purge
+pip install torch -f https://download.pytorch.org/whl/torch_stable.htm
+```
+
 Secondly, build `monotonic_align` code (Cython):
 
 ```bash
